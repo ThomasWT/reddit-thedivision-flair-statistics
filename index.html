@@ -151,7 +151,7 @@
             final.push(flair_list)
             $(".loading").remove();
             var myPieChart = new Chart(ctx, {
-                type: 'pie',
+                type: 'doughnut',
                 data: {
                     datasets: [{
                         data: counts,
@@ -164,7 +164,7 @@
                 options: {
                     plugins: {
                         colorschemes: {
-                            scheme: 'brewer.Set3-12'
+                            scheme: 'tableau.HueCircle19'
                         }
                     },
                     legend: {
@@ -175,7 +175,8 @@
                             fontColor: '#FF6A13',
                             fontStyle: 'bold',
                             fontSize:15,
-                            padding: 10,
+                            padding: 20,
+                            fontFamily: 'BordaW00-Regular',
                             usePointStyle:true,
                             strokeStyle: "#FF6A13"
                         },
