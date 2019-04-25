@@ -5,11 +5,10 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js">
 <!--<![endif]-->
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>reddit stats</title>
+    <title>r/thedivision flair statistics</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
@@ -17,17 +16,25 @@
         integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
     <script src="    https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-zoom/0.6.6/chartjs-plugin-zoom.js"></script>
-        rel="stylesheet" type="text/css" />
+    rel="stylesheet" type="text/css" />
     <script src="js/chartjs-plugin-colorschemes.min.js"></script>
     <style>
-        @font-face {font-family: "BordaW00-Regular";
-    src: url("https://db.onlinewebfonts.com/t/56081cca11dcf5db1296cfa2f36ceed3.eot"); /* IE9*/
-    src: url("https://db.onlinewebfonts.com/t/56081cca11dcf5db1296cfa2f36ceed3.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("https://db.onlinewebfonts.com/t/56081cca11dcf5db1296cfa2f36ceed3.woff2") format("woff2"), /* chrome firefox */
-    url("https://db.onlinewebfonts.com/t/56081cca11dcf5db1296cfa2f36ceed3.woff") format("woff"), /* chrome firefox */
-    url("https://db.onlinewebfonts.com/t/56081cca11dcf5db1296cfa2f36ceed3.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
-    url("https://db.onlinewebfonts.com/t/56081cca11dcf5db1296cfa2f36ceed3.svg#BordaW00-Regular") format("svg"); /* iOS 4.1- */
-}
+        @font-face {
+            font-family: "BordaW00-Regular";
+            src: url("https://db.onlinewebfonts.com/t/56081cca11dcf5db1296cfa2f36ceed3.eot");
+            /* IE9*/
+            src: url("https://db.onlinewebfonts.com/t/56081cca11dcf5db1296cfa2f36ceed3.eot?#iefix") format("embedded-opentype"),
+                /* IE6-IE8 */
+                url("https://db.onlinewebfonts.com/t/56081cca11dcf5db1296cfa2f36ceed3.woff2") format("woff2"),
+                /* chrome firefox */
+                url("https://db.onlinewebfonts.com/t/56081cca11dcf5db1296cfa2f36ceed3.woff") format("woff"),
+                /* chrome firefox */
+                url("https://db.onlinewebfonts.com/t/56081cca11dcf5db1296cfa2f36ceed3.ttf") format("truetype"),
+                /* chrome firefox opera Safari, Android, iOS 4.2+*/
+                url("https://db.onlinewebfonts.com/t/56081cca11dcf5db1296cfa2f36ceed3.svg#BordaW00-Regular") format("svg");
+            /* iOS 4.1- */
+        }
+
         html {
             height: 100%;
             width: 100%;
@@ -40,6 +47,17 @@
             width: 100%;
             margin: 0;
             height: 100%;
+        }
+
+        a {
+            color: #FF6A13;
+            text-align: center;
+            bottom: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            position: absolute;
+            left: 20px;
+            font-family: 'BordaW00-Regular', monospace;
         }
 
         .overlay {
@@ -72,24 +90,26 @@
             display: block;
             position: relative;
             height: auto;
-            width:35%;
+            width: 35%;
             margin: 0 auto;
             padding: 3%;
-            padding-top:2%;
+            padding-top: 2%;
             padding-bottom: 0;
         }
+
         @media screen and (max-width: 1200px) {
             .container {
-                width:70%;
+                width: 70%;
             }
         }
+
         /* On screens that are 992px or less, set the background color to blue */
         @media screen and (max-width: 992px) {
             .container {
                 display: block;
                 position: relative;
                 height: auto;
-                width:60%;
+                width: 60%;
                 margin: 0 auto;
                 padding: 3%;
                 padding-top: 2%;
@@ -104,7 +124,7 @@
                 height: 100%;
                 width: 100%;
                 margin: 0 auto;
-                padding:0;
+                padding: 0;
                 padding-top: 2%;
             }
         }
@@ -115,7 +135,7 @@
     <div class="overlay"></div>
     <h1>r/thedivision flair statistics of the latest 100 posts on HOT</h1>
     <div class="container">
-    <div class="loading"><img src="images/loading.png"></div>
+        <div class="loading"><img src="images/loading.png"></div>
         <canvas id="myChart"></canvas>
     </div>
     <script>
@@ -174,10 +194,10 @@
                         labels: {
                             fontColor: '#FF6A13',
                             fontStyle: 'bold',
-                            fontSize:15,
+                            fontSize: 15,
                             padding: 20,
                             fontFamily: 'BordaW00-Regular',
-                            usePointStyle:true,
+                            usePointStyle: true,
                             strokeStyle: "#FF6A13"
                         },
                     },
@@ -185,8 +205,8 @@
                     maintainAspectRatio: true,
                     aspectRatio: 1,
                     responsiveAnimationDuration: 500,
-                    onResize: function() {
-                        if(window.outerWidth <= 600) {
+                    onResize: function () {
+                        if (window.outerWidth <= 600) {
                             Chart.instances[0].legend.position = "right"
                         }
                     }
@@ -194,6 +214,7 @@
             });
         });
     </script>
+    <a href="https://www.reddit.com/user/eothica">by u/eothica</a>
 </body>
 
 </html>
